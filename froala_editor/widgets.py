@@ -68,10 +68,7 @@ class FroalaEditor(widgets.Textarea):
 
     def trigger_froala(self, el_id, options):
 
-        str = """
-        <script>
-            new FroalaEditor('#%s',%s)
-        </script>""" % (el_id, options)
+        str = ""
         return str
 
     def _media(self):
