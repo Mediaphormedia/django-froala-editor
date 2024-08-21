@@ -7,7 +7,7 @@ from . import PLUGINS, PLUGINS_WITH_CSS, THIRD_PARTY, THIRD_PARTY_WITH_CSS
 try:
     from django.urls import NoReverseMatch, reverse
 except ImportError:
-    from django.core.urlresolvers import reverse, NoReverseMatch
+    from django.urls import NoReverseMatch, reverse
 
 
 class FroalaEditor(widgets.Textarea):
